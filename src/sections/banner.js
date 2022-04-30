@@ -37,7 +37,9 @@ const Banner = () => {
                 Spring Boot &amp; React 編
               </Box>
               <Heading as="h3">
-                Awakening Challenge 2022
+                <Text sx={styles.banner.chase}>THE CHASE</Text>
+                <Text sx={styles.banner.butterfly}>Butterfly&nbsp;
+                  <Text as="span" sx={styles.banner.challenge}>Challenge</Text></Text>
               </Heading>
               <Heading as="h4">
                 アプリ開発チャレンジ
@@ -168,6 +170,18 @@ const styles = {
           marginRight: '10px',
         },
       },
+    },
+    chase: {
+      color: '#9ea3bc',
+      // fontFamily: 'Homemade Apple',
+      fontFamily: 'Arial Bold',
+    },
+    butterfly: {
+      color: '#e25c43',
+    },
+    challenge: {
+      color: '#412447',
+      fontSize: ['8px', '18px', null, '24px', null, '50px', '45px'],
     },
     form: {
       position: 'relative',
